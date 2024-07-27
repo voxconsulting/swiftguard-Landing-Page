@@ -96,9 +96,13 @@
                     <h1 class="display-5 fw-bold">SwiftGuard: Your Personal Guardian in the Digital Age</h1>
                     <p class="mt-4 text-muted">SwiftGuard is a next-generation security platform designed to offer
                         seamless personal safety management.</p>
-                    <button class="btn bg-gradiant mt-4">Request Demo</button>
+                        
+                        <button class="pulse-button" id="playButton">
+                            <span class="play-icon">&#9658;</span>
+                        </button>
                 </div>
 
+               
 
 
                 <div class="col-lg-5 offset-md-1 ">
@@ -114,6 +118,14 @@
 
         <div class="background-line"></div>
     </section>
+    <div class="overlay" id="videoOverlay">
+        <div class="video-container">
+            <span class="close-button" id="closeButton">&times;</span>
+            <video controls id="videoElement">
+                <source src="video/swift.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
     <!-- end home section -->
 
 
@@ -1330,7 +1342,11 @@
                     <a class="navbar-brand logo text-uppercase" href="index-1.html">
                         <h5 class="text-white fw-bold">SwiftGuard Responder</h5>
                     </a>
-                    <p class="text-white-50 mt-2 mb-0">SwiftGuard Responder is dedicated to revolutionizing alarm response services with unmatched speed, transparency, and accountability. Partner with us to redefine security and ensure the highest levels of safety and satisfaction for your customers. With community responders integrated into our system, you are always protected by those you trust most.
+                    <p class="text-white-50 mt-2 mb-0">SwiftGuard Responder is dedicated to revolutionizing alarm
+                        response services with unmatched speed, transparency, and accountability. Partner with us to
+                        redefine security and ensure the highest levels of safety and satisfaction for your customers.
+                        With community responders integrated into our system, you are always protected by those you
+                        trust most.
                     </p>
 
                     <div class="footer-icon mt-4">

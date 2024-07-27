@@ -19,6 +19,27 @@ window.addEventListener('scroll', (ev) => {
   windowScroll();
 });
 
+document.getElementById('playButton').addEventListener('click', function() {
+  document.getElementById('videoOverlay').style.display = 'flex';
+});
+
+document.getElementById('closeButton').addEventListener('click', function() {
+  var videoOverlay = document.getElementById('videoOverlay');
+  videoOverlay.style.display = 'none';
+  var video = document.getElementById('videoElement');
+  video.pause();
+  video.currentTime = 0;
+});
+
+// Close overlay if clicking outside the video container
+document.getElementById('videoOverlay').addEventListener('click', function(event) {
+  if (event.target === this) {
+      this.style.display = 'none';
+      var video = document.getElementById('videoElement');
+      video.pause();
+      video.currentTime = 0;
+  }
+});
 
 
 //
@@ -134,7 +155,6 @@ new Swiper('.swiper-container', {
     }
   }
 });
-
 
 
 
