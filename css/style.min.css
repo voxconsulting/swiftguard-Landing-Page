@@ -45,9 +45,12 @@
 
 .video-container {
     position: relative;
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
     width: 90%;
-    max-width: 600px;
+    max-width: auto;
     max-height: 80%;
+    margin: 0 auto; /* Optional: To center the container itself horizontally */
 }
 
 .close-button {
